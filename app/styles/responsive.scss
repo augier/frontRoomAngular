@@ -1,0 +1,172 @@
+// Responsive template by Chris Augier
+
+.body{
+
+}
+ul{
+	padding: 0;
+	margin: 10px 0;
+	p{
+		margin: 0;
+	}
+}
+
+//desktop
+@media (min-width: 940px) {
+	
+
+	.wrapper{
+
+		
+		//display: table;
+
+		height: 100%;
+		width: 100%;
+	}
+
+	.menu{
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-width: 200px;
+		min-height: 500px;
+	}
+
+	.menu{
+
+		
+		float: left;
+		position: fixed;
+		
+		padding: 60px 20px;
+    	margin-left: 0;
+
+    	width: 200px;
+    	min-height: 50%;
+
+    	.outer-nav-list{
+			
+			top: 70px;
+			left: 0;
+			display: block;
+		}
+
+		.list-button{
+			display: none;
+		}
+	}
+
+	.image-box{
+		padding-left: 240px;
+	}
+
+	.main-content{
+		
+		padding-left: 240px;
+
+		
+		overflow: hidden;
+
+
+	}
+
+	.footer{
+		position:fixed;
+	   	left:0;
+	   	bottom:0;
+	   	height:70px;
+	   	width:100%;
+	}
+}
+
+//tablet
+@media (min-width: 640px) and (max-width: 940px) {
+
+	.menu{
+
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		//display: inline-block;
+		height: 70px;
+		width: 100%;
+
+		.outer-nav-list{
+			position: fixed;
+			top: 0;
+			left: 220px;
+			display: block;
+		}
+		.outer-nav-item{
+			float: left;
+			display: inline-block;
+		}
+
+		.inner-nav-list{
+			//clear: both;
+		}
+		.inner-nav-item{
+
+			display: inline-block;
+		}
+
+		.list-button{
+			display: none;
+		}
+	}
+
+
+	.image-box{
+		padding-left: 0;
+	}
+
+	.main-content{
+		padding-left: 0;
+	}
+
+	.footer{
+
+	}
+}
+
+//phone
+@media screen and (max-width: 640px) {
+	
+	.menu{
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		height: 70px;
+		width: 100%;
+	
+		.list-button{
+			position: fixed;
+			top: 20px;
+			right: 10px;
+			padding: 20px;
+		}
+		
+	}
+
+	.outer-nav-list{
+			width: 100%;
+			position: fixed;
+			top: 60px;
+			left: 0px;
+			display: none;
+		}
+
+	.image-box{
+		padding-left: 0;
+	}
+
+	.main-content{
+		padding-left: 0;
+	}
+
+	.footer{
+
+	}
+}
