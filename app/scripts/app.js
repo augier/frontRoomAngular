@@ -1,8 +1,8 @@
 'use strict';
 
-var frontRoomApp = angular.module('frontRoomApp', []);
+var frontRoomApp = angular.module('frontRoomApp', ['youtube']);
 
-frontRoomApp.config(function ($routeProvider) {
+frontRoomApp.config(function ($routeProvider, $youtube) {
 
   $routeProvider.when('/', {
       templateUrl: 'views/main.html',
