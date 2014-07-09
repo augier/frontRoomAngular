@@ -1,35 +1,12 @@
 <div class="image-box">
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="title-box">
-				<h1>{{playlistName}} playlist</h1>
-				<p>{{playlistDescription}}</p>
-			</div>
-		</div>
-	</div>
+	<title-block playlist="playlist"></title-block>
 </div>
-<div class="main-content">
+<section class="main-content">
 	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="main-content-youtube span5">
-				<div ng-bind-html-unsafe="embedCode"></div> <!--embed video here -->
-			</div>
-			<div class="comment-block span5">
-				<h2>Comments</h2>
-				<div class="comment-block__item" ng-repeat="comment in comments">
-					<p class="comment">{{comment.comment}}</p>
-					<p class="commenter">{{comment.name}}</p>
-					<p class="date">{{comment.date}}</p>
-				</div>
-				<!--
-				<div class="comment-block__item">
-					<p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, amet, eum rem expedita officiis earum mollitia eligendi natus quos incidunt? Vitae corporis error corrupti aliquam illum deserunt eum ad repellat?</p>
-					<p class="commenter">Chelsea Robinson</p>
-					<p class="date">A week ago</p>
-				</div>-->
-			</div>
-		</div>
+		
+			<!-- <video-frame url="{{playlist.url}}"></video-frame>
+			<comment-block comments="comments"></comment-block> -->
+			<tiles></tiles>
+		
 	</div>
-</div>
-
-
+</section>

@@ -34,15 +34,19 @@
       <ul class="outer-nav-list">
         <li class="outer-nav-item outer-nav-item--active"><a href="/#/">youtube...</a></li>
         <li class="outer-nav-item"><a href="/#/soundcloud">soundcloud</a></li>
-        <li class="outer-nav-item"><p>login</p></li>
+        <li class="outer-nav-item"><a href="http://localhost:3000/auth/facebook">login</a></li>
       </ul>
       <button class="list-button"></button>
     </div>
-    <div class="wrapper" ng-view=""></div> <!-- Inserts stuff here -->
+    <div class="wrapper" ng-view></div> <!-- Inserts stuff here -->
 
     <div class="footer">
+      <a class="icon right" href="www.twitter.com"><img width="50" height="50" src="images/twitter-icon.png" alt="Twitter"></a>
+      <a class="icon right" href="www.facebook.com"><img width="50" height="50" src="images/facebook-icon.png" alt="Facebook"></a>
+      
       <a href="http://augier.me">Chris Augier</a>
       <p>This is an <a href="http://angularjs.org/">Angular</a> site</p>
+
     </div>
   </div>
 
@@ -61,6 +65,7 @@
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
@@ -83,6 +88,10 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/soundcloud.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/controllers.js"></script>
+        <script src="scripts/directives/directives.js"></script>
+        <script src="scripts/services/services.js"></script>
         <!-- endbuild -->
 
         

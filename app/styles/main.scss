@@ -1,6 +1,7 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
+@import "bootstrap-sass/lib/bootstrap";
 @import "bootstrap-sass/lib/responsive";
 
 $black: #000000;
@@ -26,8 +27,13 @@ body {
 }
 
 a{
+
     color: $white;
 
+}
+
+.right{
+    float: right;
 }
 
 .logo{
@@ -126,7 +132,7 @@ a{
 }
 
 .main-content{
-    background-color: $white;
+    //background-color: $light-grey;
 }
 
 .main-content-youtube{
@@ -147,6 +153,56 @@ a{
         width: 90%;
     
     }
+
+}
+
+.btn-filter-group {
+
+    
+    padding: 10px;
+    background-color :rgba(20,20,20,0.5);
+    font-weight: 400;
+
+    p {
+
+        color: $white;
+
+    }
+
+    .btn-filter {
+
+        border: $white 1px solid;
+
+        background: transparent;
+        color: $white;
+
+    }
+
+}
+
+.tile {
+
+    margin: 20px 0;
+    padding: 10px;
+
+    background-color: $white;
+
+    img {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .caption {
+
+        padding: 5px;
+
+        color: $black;
+        font-size: 75%;
+
+    }
+
 }
 
 .comment-block{
@@ -177,4 +233,8 @@ a{
     padding: 10px;
 
     color: $light-grey;
+
+    .icon{
+        padding: 10px;
+    }
 }
